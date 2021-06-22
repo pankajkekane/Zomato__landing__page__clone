@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*to box model*/
+}
+/*global*/
+
+body{
+    font-family: merriweather , sans-serif;
+    background-color: #ebf2ff;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+}
+
+section{
+  margin: 4rem 0;
+}
+ 
+ .hide__mobile{
+   display: none !important;
+ }
+
+.navbar{
+  position: sticky;
+  top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9fafc; 
+    box-shadow: 0 10px 15px -3px rgba(0, o, 0, 0.1),
+    0 4px 6px -2px rgba(0, o, 0, 0.05);
+    z-index: 9999;
+}
+
+.navbar__brand{
+    width: 100px;
+}
+
+.mobile__navbar__items{
+  background-color: #f9fafc;
+  padding: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, o, 0, 0.1),
+    0 4px 6px -2px rgba(0, o, 0, 0.05);
+    z-index: 9999;
+}
+
+.hamburger__menu > div {
+  width: 35px;
+  height: 5px;
+  background-color: #f9fafc;
+  margin: 6px 0;
+}
+
+.hamburger__menu__close{
+  display: none !important;
+}
+
+.mobile__navbar__items > ul > li{
+  margin: 20px 0;
+}
+
+.navbar__logo{
+    width: 100%;
+}
+
+
+.button__primary{
+    background-image: linear-gradient( 
+      to right,
+    
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+   
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius:6px;
+    cursor: pointer;
+} 
+
+
+
+
+
+/*section styling*/
+.container{
+  width: 100%;
+margin: 0 auto;
+padding: 0 15px;
+}
+
+.hero__container{
+width: 100%;
+
+}
+
+.hero__image__container{
+  width: 100%;
+}
+
+.hero__image{
+  width: 50%;
+}
+
+.hero__text{
+  font-size: 30px;
+  color: #1d3557;
+  margin: 20px 0;
+}
+
+
+/* video footage*/
+.video__footage__container{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.video__footage{
+  position: relative;
+}
+
+.video__footage::before{
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  content: "";
+top: 0;
+left: 0;
+position: absolute;
+transform: translate(1rem, 1rem);
+height: 100%;
+width: 100%;
+z-index: -1;
+}
+
+.video__footage__text{
+  margin-top: 2rem;
+  color: #1d3557;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+/*food menu section*/
+.food__menu__card{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.food__image{
+  width: 100%;
+border-radius: 8px 8px 0px 0px; 
+
+}
+.food__menu__card__description{
+  padding: 20px;
+}
+.explore__menu__text{
+  text-align: center;
+   font-size: 30px;
+  color: #1d3557;
+  margin: 20px 0;
+}
+.explore__menu__container{
+  margin-top: 50px;
+}
+.explore__menu__view__more{
+display: flex;
+justify-content: center;
+}
+
+
+
+
+/*flex */
+.restaurants__description{
+text-align: center;
+   font-size: 30px;
+   color: #1d3557;
+  margin: 20px 0;
+
+  }
+
+.restaurants__flex__row__1,
+.restaurants__flex__row__2{
+  width: 100%;
+display: flex;
+gap: 4px;
+}
+
+.restaurants__flex__row__1{
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.restaurant__1__image,
+.restaurant__2__image,
+.restaurant__3__image,
+.restaurant__4__image{
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.restaurant__1,
+.restaurant__4{
+  width: 100%;
+  height: 150px;
+}
+
+.restaurant__2,
+.restaurant__3{
+  width: 120%;
+  height: 200px;
+}
+
+
+
+
+/*email updation---*/
+
+.email__subscribe__container{
+  margin-top: 3rem;
+  width: 100%;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.email__subscribe__input__field{
+  display: flex;
+  align-items: center;
+}
+
+.email__input{
+  border: 1px solid #ee89a0;
+  border-radius: 4px;
+  background-color: #fcedf0;
+  color: #1d3557;
+  font-weight: 700;
+  padding: 0.5rem;
+  margin-right: 5px;
+}
+
+.email__input::placeholder{
+  color: #bdbcbc
+}
+
+/*quote container*/
+
+.quote__container{
+  position: relative;
+  margin-top: 4rem;
+  align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 200px;
+width: 100%;
+border-radius: 13px;
+background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+center center / cover no-repeat;
+}
+
+.quote__image__overlay{
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  border-radius: 13px;
+  background-color: #0a4065
+  opacity: 49%;
+}
+
+.quote__image__text{
+  color: #fff;
+  z-index: 3;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  .navbar{
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+.navbar__brand{
+    width: 150px;
+    }
+
+.button__primary{
+  padding: 12px 20px;
+  font-size: 20px;
+}
+
+.hero__container{
+  display: flex;
+  flex-direction: row-reverse;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.explore__menu__lists{
+  margin-top: 50px;
+  display: flex;
+  gap: 8px;
+}
+
+#pizza__card{
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.explore__menu__container{
+  position: relative;
+}
+
+.explore__menu__gradient_bg{
+  position:absolute;
+  left: 0;
+  top: 0;
+
+  height: 100%;
+  width: 100%;
+
+  background-image: linear-gradient( 
+      to right,
+    
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+   
+   z-index: -3;
+
+   transform: skewY(-5deg);
+}
+
+.restaurants__description{
+  font-size: 40px;
+  width: 100%;
+margin-right: 30px;
+ 
+}
+
+.restaurants__container{
+  display: flex;
+  align-items: center;
+  
+}
+
+.restaurant__flex{
+  width: 100%;
+}
+}
+
+@media (min-width: 1020px){
+
+  .container{
+    max-width: 900px;
+  
+  }
+
+ .hero__text{
+   font-size: 50px;
+ }
+
+.explore__menu__lists{
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.explore__menu__text{
+  font-size: 50px;
+}
+
+.restaurants__container{
+  margin-top: 60px;
+}
+}
+
+@media(min-width: 1400px){
+.container{
+  max-width: 1250px;
+}
+
+}
+
